@@ -1,0 +1,63 @@
+.MainNav{
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.ic{
+    margin: 8px 15px;
+}
+.NavbarTop{
+    border-bottom: 2px solid ghostwhite;
+}
+.SecNav{
+    text-align: center;
+    color: orange;
+    margin: 10px 0px;
+}
+.SecNav .top{
+    font-size: 3rem;
+}
+.SecNav .bottom{
+    width: 60%;
+    margin: 10px auto;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.btn{
+    color: red;
+}
+
+/* minNav */
+.minNav{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+}
+.subNav{
+    margin: 20px auto;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+
+
+/*[x] Footer */
+
+#SecFooter{
+    margin: 10px;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    box-shadow: 0px 0px 5px gray;
+    padding: 20px 0px;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.5;
+}
+.footerDiv{
+    line-height: 2;
+}

@@ -1,0 +1,24 @@
+/* OurBenifit.jsx */
+
+.OurBenifit{
+    height: 60vh;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Benfit_Con{
+    width: 300px;
+    margin: 30px;
+    text-align: center;
+}
+
+.Benfit_Con i{
+    font-size: 3rem;
+    margin: 20px;
+}
+.Benfit_Con h3{
+    margin: 10px;
+}
