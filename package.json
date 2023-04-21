@@ -1,6 +1,5 @@
 {
   "name": "ecom",
-  "proxy": "https://ecom-backend-9u2i.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

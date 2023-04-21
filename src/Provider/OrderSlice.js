@@ -10,7 +10,7 @@ const initialState={
 export const OrdersSend=createAsyncThunk('orders',(data)=>{
     let config={Headers:{"content-Type":"application/json"}}
     return (
-        axios.post(`/orders`,data,config)
+        axios.post(`https://ecom-backend-9u2i.onrender.com/orders`,data,config)
         .then((res)=>{
             return res
         })

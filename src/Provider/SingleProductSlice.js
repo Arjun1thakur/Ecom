@@ -9,7 +9,7 @@ const initialState={
 
 export const fetchSingleProduct=createAsyncThunk('store/product',(data)=>{
     return (
-        axios.get(`/store/${data}`)
+        axios.get(`https://ecom-backend-9u2i.onrender.com/store/${data}`)
         .then((res)=>{
             return res.data
         })

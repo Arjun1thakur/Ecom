@@ -9,7 +9,7 @@ const initialState={
 
 export const Categoryfetch=createAsyncThunk('/store',(data)=>{
     return (
-        axios.get(`/${data}`)
+        axios.get(`https://ecom-backend-9u2i.onrender.com/${data}`)
         .then(res=>{
             return res.data
         })

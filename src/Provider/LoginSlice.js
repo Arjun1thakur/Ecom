@@ -10,7 +10,7 @@ const initialState={
 export const LoginUser=createAsyncThunk('signin',(data)=>{
     let config={Headers:{"content-Type":"application/json"}}
     return (
-        axios.post(`/signin`,data,config)
+        axios.post(`https://ecom-backend-9u2i.onrender.com/signin`,data,config)
         .then((res)=>{
             // localStorage.setItem("User", JSON.stringify(res))
             return res
