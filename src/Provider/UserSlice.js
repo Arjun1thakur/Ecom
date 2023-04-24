@@ -10,7 +10,7 @@ const initialState={
 export const SendUser=createAsyncThunk('store/product',(data)=>{
     let config={Headers:{"content-Type":"application/json"}}
     return (
-        axios.post(`/signup`,data,config)
+        axios.post(`https://ecom-backend-9u2i.onrender.com/signup`,data,config)
         .then((res)=>{
             return res
         })

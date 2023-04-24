@@ -11,7 +11,7 @@ const ProductUpload = () => {
     let sendData=(e)=>{
        if(User){
         e.preventDefault()
-        let send=axios.post("http://localhost:8080/store/upload",{...data,User:User.user._id})
+        let send=axios.post("https://ecom-backend-9u2i.onrender.com/store/upload",{...data,User:User.user._id})
         if(send){
             alert('done')
         }else{
