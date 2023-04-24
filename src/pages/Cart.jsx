@@ -1,8 +1,10 @@
 import React from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import { OrdersSend } from '../Provider/OrderSlice'
+import { useNavigate } from 'react-router-dom'
 
 const Cart = () => {
+  let navigate=useNavigate()
   let product=useSelector(state=>state.Cart)
   let Login=useSelector(state=>state.Login)
   let dispatch =useDispatch()
@@ -21,11 +23,15 @@ const Cart = () => {
           "Address":address,
           "payment":"Pending"
       }))
-      }
       alert('Order Successful')
       window.open("https://rzp.io/l/4pyGTIarom")
+      }else{
+        alert('Sorry Order not saved yet.')
+      }
+      
     }else{
       alert('First Sign-in')
+      navigate('/signin')
     }
   }
   return (
@@ -47,8 +53,8 @@ const Cart = () => {
               </div>
             )
           })}
-          <p style={{"textTransform":"uppercase","textAlign":"center","margin":"50px 0px 0px 0px"}}>For Saving you need to pay first. There's no payment limit  pay according to your wallet</p>
-          <h1 style={{"textTransform":"uppercase","textAlign":"center","margin":"0px 0px 50px 0px"}}><button onClick={order}>Buy Now</button></h1>
+          <p style={{"textTransform":"uppercase","textAlign":"center","margin":"50px 10px 0px 10px"}}>For Saving you need to pay first. There's no payment limit  pay according to your wallet</p>
+          <h1 style={{"textTransform":"uppercase","textAlign":"center","margin":"0px 0px 50px 0px"}}><button className='cartbtn' onClick={order} style={{"boxShadow":"0px 0px 5px gray","padding":"5px 20px","borderRadius":"8px"}}>Buy Now</button></h1>
     </>
   )
 }

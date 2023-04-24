@@ -61,3 +61,20 @@
 .footerDiv{
     line-height: 2;
 }
+
+
+/* minNav */
+
+.MinNav{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999999;
+    /* color: ; */
+    display: flex;
+}
+.MinNav a{
+    background-color: transparent;
+}

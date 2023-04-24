@@ -20,8 +20,12 @@ const Login = () => {
         try {
             e.preventDefault()
             let {email,password}=formData
-            dispatch(LoginUser({email,password}))    
-            navigate('/')
+            dispatch(LoginUser({email,password})) 
+            // if(userData.product.data.user){
+                navigate('/')
+            // }else{
+            //     alert('Wrong User info')
+            // }
         } catch(error){
             alert(error)
         }
@@ -31,7 +35,7 @@ const Login = () => {
          {userData.loading && <Loading/>}
         {!userData.loading && userData.error ? <div style={{"position":"absolute","top":"50%","left":"50%","transform":"translate(-50%,-50%)"}}><h1>Error : {userData.error}</h1></div>:
         <div className="flex login-box">  
-            <div className='flex'>
+            <div className='flex logins'>
                 <div>
                     <img src="https://mir-s3-cdn-cf.behance.net/projects/404/877e53119900623.Y3JvcCwzMTk2LDI0OTksNzEsMA.png" alt="img" />
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react'
-import {useNavigate} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 
-const MinStore = ({data}) => {
+const MinStore = ({data,category}) => {
   let navigation=useNavigate()
   let change=(data)=>{
     navigation(`/store/${data._id}`)
@@ -27,6 +27,7 @@ const MinStore = ({data}) => {
                   )
                 })}
             </div>
+            <Link to={"/store"}><h1 style={{"textAlign":"center"}}>Load More</h1></Link>
         </section>
     </>
   )

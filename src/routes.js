@@ -11,6 +11,8 @@ import Unique from './pages/Unique'
 import Signup from './components/Signup'
 import Login from './components/Login'
 import Cart from './pages/Cart'
+import ProductUpload from './pages/ProductUpload'
+import Store from './pages/Store'
 
 // [ ] CSS
 import ('./assets/css/extra.css')
@@ -18,6 +20,7 @@ import ('./assets/css/Header&Footer.css')
 import ('./assets/css/Home.css')
 import ('./assets/css/Display.css')
 import ('./assets/css/login.css')
+import ('./assets/css/responsive.css')
 
 
 const Main = () => {
@@ -45,11 +48,13 @@ const Main = () => {
       <>
           <Header category={category}/>  
           <Routes>
-            <Route path='/' element={<Home data={product.product}/>}/>
-            <Route path='/:id' element={<Category/>}/>
+            <Route path='/' element={<Home data={product.product} category={category}/>}/>
+            <Route path='/:id' element={<Category/>}/>  
+            <Route path='/store' element={<Store data={product.product}/>}/>  
             <Route path='/store/:id' element={<Unique/>}/>
             <Route path='/signin' element={<Login/>}/>
             <Route path='/signup' element={<Signup/>}/>
+            <Route path='/product/upload' element={<ProductUpload/>}/>
             <Route path='/cart' element={<Cart/>}/>
           </Routes>
           

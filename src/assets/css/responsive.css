@@ -1,0 +1,53 @@
+.bar{
+    display: none;
+    margin: 20px;
+}
+@media screen and (max-width:1000px) {
+    .OurBenifit{
+        height: initial;
+        flex-direction: column;
+    }
+    .SecNav .bottom{
+        display: none;
+    }
+    .MainNav{
+        display: none !important;
+    }
+    .unique_pro{
+        display: block !important;
+    }
+    .unique-details{
+        padding: 50px 0px;
+    }
+    .unique_left{
+        margin: 0px auto;
+    }
+    .cart-sent{
+        flex-direction: column;
+    }
+    .cart-sent > img{
+        width: 200px;
+        margin: 0 auto;
+    }
+    .cart-sent{
+        height: auto;
+    }
+    .bar{
+        display: initial;
+    }
+    .login-box{
+        width: 90vw;
+        height: auto;
+    }
+    .logins{
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        padding: 20px;
+    }
+    .setup{
+        width: 60vw;
+        gap: 20px;
+    }
+}
+
